@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fee Payment</title>
+    <link rel="stylesheet" type="text/css" href="../studentDetails.css" />
+    <script src="../studentDetails.js"></script>
+</head>
+<body>
+    <!--Side bar-->
+    <div class="sidenav" id="sidenav" >
+        <h2 id="welcomeUser">Welcome</h2>
+        <ul>
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="studentsList.html"  >Student Details</a></li>
+            <li><a href="addStudent.html" >Student Registration</a></li>
+            <li><a href="feePayment.html" class="navpage">Fee Payment</a></li>
+            <li><a href="contactUs.html" >Contact</a></li>
+        </ul>
+      </div>
+    <div class="content">
+    <div class="container">
+    <header>
+        <h1>Fee Payment</h1>
+    </header>
+
+    <div class="payment-form" >
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="studentID">Student ID</label>
+                <input type="text" id="studentID" name="studentID" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date</label>
+                <input type="text" id="expirationDate" name="expirationDate" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="billingAddress">Billing Address</label>
+                <textarea id="billingAddress" name="billingAddress" required></textarea>
+            </div>
+            <button type="submit" onclick="paymentSuccess()">Pay Now</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2023 All rights reserved.
+    </footer>
+    </div>
+</div>
+</body>
+</html>

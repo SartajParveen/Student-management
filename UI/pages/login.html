@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student List</title>
+    <link rel="stylesheet" type="text/css" href="../studentDetails.css" />
+    <script src="../studentDetails.js"></script>
+  </head>
+  <body>
+    <!--Login page-->
+    <div class="login" id="login">
+      <div class="login-container">
+        <h2 class="login-header">Welcome, Please Login</h2>
+        <form id="login-form">
+          <label class="login-label" for="username">Username:</label>
+          <input
+            class="login-user"
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+
+          <label class="login-label" for="password">Password:</label>
+          <input
+            class="login-password"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button class="login-submit" onclick="onlogin()" type="submit">Login</button>
+        </form>
+        <span id="warn" style="color:red"></span>
+        <br/>
+        <span style="color:red;font-weight:bold;">Only for authorized personnel!!!</span>
+      </div>
+    </div>
+
+    
+  
+
+    
+  </body>
+</html>

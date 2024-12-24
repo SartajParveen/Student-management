@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <title>Student List</title>
+    <link rel="stylesheet" type="text/css" href="../studentDetails.css" />
+    <script src="../studentDetails.js"></script></head>
+<body>
+    <div class="sidenav" id="sidenav" >
+        <h2 id="welcomeUser">Welcome</h2>
+        <ul>
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="studentsList.html" >Student Details</a></li>
+            <li><a href="addStudent.html" >Student Registration</a></li>
+            <li><a href="feePayment.html" >Fee Payment</a></li>
+            <li><a href="contactUs.html" class="navpage">Contact</a></li>
+        </ul>
+      </div>
+    <div class="content">
+    <div class="container">
+
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="query">Query</label>
+                <textarea id="query" name="query" rows="6" required></textarea>
+            </div>
+            <button type="submit" onclick="thanks()">Submit</button>
+        </form>
+
+    <footer>
+        &copy; 2023 All rights reserved.
+    </footer>
+</div>
+</div>
+
+</body>
+</html>

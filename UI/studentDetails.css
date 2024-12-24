@@ -1,0 +1,316 @@
+.my-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  color:red;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-label
+{
+    display: flex;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.facilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.facility {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.facility img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+p
+{
+    color:#666;
+}
+
+.my-table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.my-table th,
+.my-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.my-table th {
+  background-color: #f2f2f2;
+}
+
+.my-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.my-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.pagin-button {
+    background-color: #676c68;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.pagin-button:hover {
+    background-color: #474847;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #363736;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav li {
+  margin: 10px 0;
+}
+
+.sidenav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #555;
+}
+
+.navpage {
+  color: green;
+  font-size:large;
+  background-color: #333;
+}
+
+.content {
+  margin-left: 260px; /* Adjust the margin to match the sidebar's width */
+  padding: 20px;
+}
+
+.login
+{
+    background-image:url('images/loginbg.jpg');
+    min-height: 100vh;
+    margin:0 auto;
+    background-size: cover;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+}
+
+.login-container {
+    min-width: 400px;
+    position: fixed;
+    top:36%;
+    left:40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    opacity: 0.7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-header {
+    color: #ff0505;
+}
+
+.login-label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login-user{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-password 
+{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    background-color: #45a049;
+}
+
+
+/* Styles for the fee payment page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.container form {
+    text-align: left;
+    padding: 20px;
+}
+
+.container .form-group {
+    margin: 10px 0;
+}
+
+.container label {
+    display: block;
+    font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="number"],
+.container select,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container button {
+  background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* Styles for the thank you page */
+
+.message {
+    text-align: center;
+    padding: 20px;
+}
+
+.message p {
+    font-size: 24px;
+}
+
+.cta {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta a {
+    color: #0074a2;
+    text-decoration: none;
+    font-weight: bold;
+}

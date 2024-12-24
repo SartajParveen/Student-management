@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student List</title>
+    <link rel="stylesheet" type="text/css" href="../studentDetails.css" />
+    <script src="../studentDetails.js"></script>
+  </head>
+  <body>
+    <!--Side bar-->
+    <div class="sidenav" id="sidenav" >
+        <h2 id="welcomeUser">Welcome</h2>
+        <ul>
+          <li><a href="home.html" >Home</a></li>
+          <li><a href="studentsList.html" class="navpage" >Student Details</a></li>
+          <li><a href="addStudent.html" >Student Registration</a></li>
+          <li><a href="feePayment.html" >Fee Payment</a></li>
+          <li><a href="contactUs.html" >Contact</a></li>
+        </ul>
+      </div>
+    <div class="content">
+        <!--Student list-->
+      <div id="table">
+        <h1>Student List</h1>
+        <table class="my-table" id="my-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="student-list"></tbody>
+        </table>
+        <div class="pagination" id="pagination">
+            <button id="prevPage" onclick="previous()" class="pagin-button">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage" onclick="next()"  class="pagin-button">Next</button>
+        </div>
+      </div>
+<!--Edit form-->
+      <div id="edit-form" class="my-form" style="display: none">
+        <h2>Edit Student</h2>
+        <form id="student-edit-form">
+          <input type="hidden" id="edit-student-id" />
+          <label for="edit-first-name">First Name:</label>
+          <input type="text" id="edit-first-name" required />
+          <br />
+          <label for="edit-last-name">Last Name:</label>
+          <input type="text" id="edit-last-name" required />
+          <br/>
+          <label for="edit-email">Email:</label>
+          <input type="email" id="edit-email" required />
+          <br />
+          <label for="edit-age">Age:</label>
+          <input type="number" id="edit-age" required />
+          <br />
+          <label for="edit-gender">Gender:</label>
+          <input type="text" id="edit-gender" required />
+          <br />
+          <button type="button" id="save-button">Save</button>
+        </form>
+      </div>
+
+      <!--View form-->
+      <div id="view-form" class="my-form" style="display: none">
+        <h2>View Student</h2>
+        <form id="student-view-form">
+          <input type="hidden" id="view-student-id" />
+          <label for="view-first-name">First Name:</label>
+          <input type="text" id="view-first-name" readonly />
+          <br />
+          <label for="view-last-name">Last Name:</label>
+          <input type="text" id="view-last-name" readonly />
+          <br />
+          <label for="view-email">Email:</label>
+          <input type="email" id="view-email" readonly />
+          <br/>
+          <label for="view-age">Age:</label>
+          <input type="number" id="view-age" readonly />
+          <br />
+          <label for="view-gender">Gender:</label>
+          <input type="text" id="view-gender" readonly />
+          <br />
+          <button type="button" id="back-button">Back</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
